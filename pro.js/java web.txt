@@ -1,0 +1,15 @@
+function person(fname, lname, age, gender){
+ this.fname = fname ;
+ this.lname = lname ;
+ this.age = age ;
+ this.gender = gender;
+ this.nationality = "Palestine";
+  this.fullName = function() {
+    return this.fname + '' + this.lname;
+  }
+};
+const p1 = new person ("rayan" , "awad" , 20 , "M");
+const p1 = new person ("balqees" , "farhat" , 21 , "F");
+
+document.getElementById("demo1").innerHTML = p1.fname();
+document.getElementById("demo2").innerHTML = p2.fullName();

@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>
+java script
+</title>
+</head>
+<body>
+
+<p>Event listenr in JavaScript </p><br>
+<p id="dome" ></p> 
+<script>
+document.addEventListener("mouseover",function1);
+document.addEventListener("click" ,function2);
+document.addEventListener("mouseout" ,function3);
+function function1()
+{
+   document.getElementById("dome").innerHTML = "Mous is over !";
+}
+function function2()
+{
+   document.getElementById("dome").innerHTML = "Mous is clicking !";
+}
+function function3()
+{
+   document.getElementById("dome").innerHTML = "Mous is out !";
+}
+</script>
+</body>
+</html>

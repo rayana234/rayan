@@ -1,0 +1,36 @@
+
+<html lang = "ar" dir="rtl">
+<head>
+<title>
+my page
+</title>
+</head>
+<body>
+<label> 
+ادخل التخصص :
+</label>
+<select id="major" onchange="chooseMajor()">
+   <option value="">---اختر التخصص---</option>
+   <option value="cs">علم حاسوب</option>
+   <option value="it">تكنولوجيا معلومات</option>
+   <option value="ai">الذكاء الاصطناعي</option>
+  </select>
+  <p id="Mypara"></p>  
+  
+<script>
+function chooseMajor(){
+let major=document.getElementById("major").value;
+let txt="";
+if (major==="cs")
+txt="لقد اخترت تخصص علم الحاسوب";
+else if(major==="it")
+txt=" لقد اخترت تخصص تكنولوجيا المعلومات";
+else if(major==="ai")
+txt=" لقد اخترت تخصص الذكاء الاصطناعي";
+else 
+txt="";
+document.getElementById("Mypara").innerHTML = txt;
+}
+</script>
+</body>
+</html>
